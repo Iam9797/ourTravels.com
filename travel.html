@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="main-contain-wrap">
+        <article class="nav-wrap">
+            <div class="nav-contains" id="nav-contains">
+                <div class="nav-home">
+                    <img src="https://fakeimg.pl/450x220/?text=OurTravel&font=lobster">
+                </div>
+                <ul class="nav-contain">
+                    <li>ABABABABABA</li>
+                    <li>ABABABABABA</li>
+                    <li>ABABABABABA</li>
+                    <li>ABABABABABA</li>
+                    <li>ABABABABABA</li>
+                    <li class="is-active">ABABABABABAABABABABABA</li>
+                    <li>ABABABABABA</li>
+                    <li>ABABABABABA</li>
+                    <li>ABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                    <li>ABABABABABAABABABABABA</li>
+                </ul>
+            </div>
+            <div class="nav-arr" data-status="0">
+                <label class="arr-text close"></label>
+            </div>
+        </article>
+        <div class="main-wrap">
+            <div class="top-wrap">
+                <span class="icon action"></span>
+                <div class="top-items">
+                    <span class="locate icon"></span>
+                    <input type="text" class="top-text" value="地點">
+                </div>
+                <div class="top-items">
+                    <span class="date icon"></span>
+                    <input type="text" class="top-text" value="2023/04/29 ~ 2023/05/01">
+                </div>
+                <div class="top-items right">
+                    <span class="icon action add"></span>
+                    <span class="icon action edit"></span>
+                    <span class="icon action del"></span>
+                </div>
+            </div>
+            <div class="main-contains">
+                <div class="main-contain slides-wrap">
+                    <div class="slideshow-container">
+                        <!-- 圖片與文字 -->
+                        <div class="myslides fade" id="slide-1">
+                            <div class="numbertext">1 / 7</div>
+                            <img src="img/S__11329543.jpg" alt="">
+                        </div>
+                        <div class="myslides fade" id="slide-2">
+                            <div class="numbertext">2 / 7</div>
+                            <img src="img/LINE_ALBUM_202343_230404_5.jpg" alt="">
+                        </div>
+                        <div class="myslides fade" id="slide-3">
+                            <div class="numbertext">3 / 7</div>
+                            <img src="img/LINE_ALBUM_202343_230404_6.jpg" alt="">
+                        </div>
+                        <div class="myslides fade" id="slide-4">
+                            <div class="numbertext">4 / 7</div>
+                            <img src="img/LINE_ALBUM_202343_230404_2.jpg" alt="">
+                        </div>
+                        <div class="myslides fade" id="slide-5">
+                            <div class="numbertext">5 / 7</div>
+                            <img src="img/LINE_ALBUM_0402好吃_230404_5.jpg" alt="">
+                        </div>
+                        <div class="myslides fade" id="slide-6">
+                            <div class="numbertext">6 / 7</div>
+                            <img src="img/LINE_ALBUM_202343_230404_1.jpg" alt="">
+                        </div>
+                        <div class="myslides fade" id="slide-7">
+                            <div class="numbertext">7 / 7</div>
+                            <img src="img/IMG_1928.jpg" alt="">
+                        </div>
+                        <!-- 上一張 -->
+                        <a class="prev">&#10094;</a>
+                        <!-- 下一張 -->
+                        <a class="next">&#10095;</a>
+                    </div>
+                    <!-- 下方點點 -->
+                    <!-- <div class="dot-wrap" style="text-align:center">
+                        <span class="dot" id="dot-1"></span>
+                        <span class="dot" id="dot-2"></span>
+                        <span class="dot" id="dot-3"></span>
+                        <span class="dot" id="dot-4"></span>
+                        <span class="dot" id="dot-5"></span>
+                        <span class="dot" id="dot-6"></span>
+                    </div> -->
+                </div>
+                <div class="main-contain">
+                    <div class="main-border">
+                        <div class="contain-nav">
+                            <label class="nav-text" data-text="images">圖片</label>
+                            <label class=""> / </label>
+                            <label class="nav-text" data-text="journey">行程</label>
+                        </div>
+                        <div class="contain-item is-active" id="contain-images">
+                            <div class="img-wrap">
+                                <div class="img-item" id="img-1">
+                                    <img src="img/S__11329543.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-2">
+                                    <img src="img/LINE_ALBUM_202343_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-3">
+                                    <img src="img/LINE_ALBUM_202343_230404_6.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-4">
+                                    <img src="img/LINE_ALBUM_202343_230404_2.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-5">
+                                    <img src="img/LINE_ALBUM_0402好吃_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-6">
+                                    <img src="img/LINE_ALBUM_202343_230404_1.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-7">
+                                    <img src="img/IMG_1928.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-1">
+                                    <img src="img/S__11329543.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-2">
+                                    <img src="img/LINE_ALBUM_202343_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-3">
+                                    <img src="img/LINE_ALBUM_202343_230404_6.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-4">
+                                    <img src="img/LINE_ALBUM_202343_230404_2.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-5">
+                                    <img src="img/LINE_ALBUM_0402好吃_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-6">
+                                    <img src="img/LINE_ALBUM_202343_230404_1.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-7">
+                                    <img src="img/IMG_1928.jpg" alt="">
+                                </div><div class="img-item" id="img-1">
+                                    <img src="img/S__11329543.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-2">
+                                    <img src="img/LINE_ALBUM_202343_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-3">
+                                    <img src="img/LINE_ALBUM_202343_230404_6.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-4">
+                                    <img src="img/LINE_ALBUM_202343_230404_2.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-5">
+                                    <img src="img/LINE_ALBUM_0402好吃_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-6">
+                                    <img src="img/LINE_ALBUM_202343_230404_1.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-7">
+                                    <img src="img/IMG_1928.jpg" alt="">
+                                </div><div class="img-item" id="img-1">
+                                    <img src="img/S__11329543.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-2">
+                                    <img src="img/LINE_ALBUM_202343_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-3">
+                                    <img src="img/LINE_ALBUM_202343_230404_6.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-4">
+                                    <img src="img/LINE_ALBUM_202343_230404_2.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-5">
+                                    <img src="img/LINE_ALBUM_0402好吃_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-6">
+                                    <img src="img/LINE_ALBUM_202343_230404_1.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-7">
+                                    <img src="img/IMG_1928.jpg" alt="">
+                                </div><div class="img-item" id="img-1">
+                                    <img src="img/S__11329543.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-2">
+                                    <img src="img/LINE_ALBUM_202343_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-3">
+                                    <img src="img/LINE_ALBUM_202343_230404_6.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-4">
+                                    <img src="img/LINE_ALBUM_202343_230404_2.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-5">
+                                    <img src="img/LINE_ALBUM_0402好吃_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-6">
+                                    <img src="img/LINE_ALBUM_202343_230404_1.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-7">
+                                    <img src="img/IMG_1928.jpg" alt="">
+                                </div><div class="img-item" id="img-1">
+                                    <img src="img/S__11329543.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-2">
+                                    <img src="img/LINE_ALBUM_202343_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-3">
+                                    <img src="img/LINE_ALBUM_202343_230404_6.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-4">
+                                    <img src="img/LINE_ALBUM_202343_230404_2.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-5">
+                                    <img src="img/LINE_ALBUM_0402好吃_230404_5.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-6">
+                                    <img src="img/LINE_ALBUM_202343_230404_1.jpg" alt="">
+                                </div>
+                                <div class="img-item" id="img-7">
+                                    <img src="img/IMG_1928.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contain-item" id="contain-journey">
+                            我是行程
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
